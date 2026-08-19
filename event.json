@@ -1,13 +1,7 @@
 {
-  "source": [
-    "aws.autoscaling"
-  ],
-  "detail-type": [
-    "EC2 Instance Launch Successful"
-  ],
+  "source": ["aws.ec2"],
+  "detail-type": ["EC2 Instance State-change Notification"],
   "detail": {
-    "AutoScalingGroupName": [
-      "my-asg-name"
-    ]
+    "state": ["running"]
   }
 }
